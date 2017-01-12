@@ -13,7 +13,11 @@
         <link href="{{URL::to('vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
         <!-- Custom Theme Style -->
         <link href="{{URL::to('build/css/custom.min.css')}}" rel="stylesheet">
+        <!-- Package from Charts for Laravel :P -->
+        {!! Charts::assets () !!}
+
     </head>
+
     <body class="nav-md">
         <div class="container body">
             <div class="main_container">
@@ -36,5 +40,7 @@
                 <script src="{{URL::asset('vendors/nprogress/nprogress.js')}}"></script>
                 <!-- Custom Theme Scripts -->
                 <script src="{{URL::asset('build/js/custom.min.js')}}"></script>
+            </div>
+            </div>
     </body>
 </html>

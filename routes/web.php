@@ -16,8 +16,14 @@ Route::get('edit&{id}','AdminController@edit');
 Route::post('update','AdminController@update');
 
 Route::resource('user','UserController');
-//Route::get('user','UserController@index');
-//Route::delete('destroy/{id}','UserController@destroy');
-//Route::post('update','UserController@update');
 
 Route::get('role','RoleController@index');
+
+
+// controller to noOfUser view
+Route::get('/noOfUser', array('as' => 'noOfUserController', 'uses' => 'noOfUserController@show'));
+
+//controller to system status view
+Route::group(['middleware' => 'web'], function() {
+   Route::get('/status', 'StatusController@show');
+});

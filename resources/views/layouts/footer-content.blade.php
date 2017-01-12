@@ -1,6 +1,6 @@
         <footer>
           <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            made for Web App project -  <a href="https://www.upm.edu.my">UPM</a>
           </div>
           <div class="clearfix"></div>
         </footer>
