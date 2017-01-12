@@ -15,4 +15,9 @@ Route::get('/','AdminController@show');
 Route::get('edit&{id}','AdminController@edit');
 Route::post('update','AdminController@update');
 
-Route::get('user','UserController@index');
+Route::resource('user','UserController');
+//Route::get('user','UserController@index');
+//Route::delete('destroy/{id}','UserController@destroy');
+//Route::post('update','UserController@update');
+
+Route::get('role','RoleController@index');
